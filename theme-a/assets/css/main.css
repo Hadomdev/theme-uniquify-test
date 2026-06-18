@@ -1,0 +1,128 @@
+/* ============================================================
+   MediClinic Care — visual layer
+   Palette: warm beige + deep green · Type: Fraunces / Inter
+   ============================================================ */
+
+:root {
+	--mc-bg: #f7f3ec;
+	--mc-surface: #ffffff;
+	--mc-ink: #1c2b25;
+	--mc-green: #1f4d3a;
+	--mc-green-600: #2c6b51;
+	--mc-sand: #e7dcc8;
+	--mc-muted: #5e6b64;
+	--mc-font-head: "Fraunces", Georgia, serif;
+	--mc-font-body: "Inter", system-ui, sans-serif;
+}
+
+body {
+	background: var(--mc-bg);
+	color: var(--mc-ink);
+	font-family: var(--mc-font-body);
+}
+
+h1, h2, h3, h4, h5, h6,
+.entry-title,
+.mc-footer__title {
+	font-family: var(--mc-font-head);
+	font-weight: 700;
+	color: var(--mc-green);
+	letter-spacing: -0.01em;
+}
+
+a { color: var(--mc-green-600); }
+
+/* ---- Header: centered logo, menu underneath ------------------------- */
+.mc-header {
+	background: var(--mc-surface);
+	border-bottom: 3px solid var(--mc-green);
+}
+
+.mc-header__inner {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 28px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 18px;
+	text-align: center;
+}
+
+.mc-header__title {
+	font-family: var(--mc-font-head);
+	font-size: 30px;
+	font-weight: 700;
+	color: var(--mc-green);
+	text-decoration: none;
+}
+
+.mc-header__nav .mc-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 28px;
+}
+
+.mc-header__nav a {
+	color: var(--mc-ink);
+	text-decoration: none;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.06em;
+	font-size: 14px;
+}
+
+.mc-header__nav a:hover { color: var(--mc-green); }
+
+/* ---- Footer: four columns, centered copyright ----------------------- */
+.mc-footer {
+	background: var(--mc-green);
+	color: #e9efe9;
+	margin-top: 60px;
+}
+
+.mc-footer__cols {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 56px 20px 32px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 32px;
+}
+
+.mc-footer__title {
+	color: #fff;
+	font-size: 18px;
+	margin: 0 0 14px;
+}
+
+.mc-footer__col ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 2;
+}
+
+.mc-footer__col p { color: #cdd9d1; line-height: 1.7; }
+
+.mc-footer__copy {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 22px 20px;
+	text-align: center;
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+	color: #b9c8bf;
+	font-size: 14px;
+}
+
+@media (max-width: 768px) {
+	.mc-footer__cols { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+	.mc-footer__cols { grid-template-columns: 1fr; }
+}

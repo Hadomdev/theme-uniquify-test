@@ -1,0 +1,208 @@
+/* ============================================================
+   NovaSaaS Studio — visual layer
+   Palette: near-black + neon violet · Type: Space Grotesk / IBM Plex Sans
+   ============================================================ */
+
+:root {
+	--ns-bg: #0e0e12;
+	--ns-panel: #16161d;
+	--ns-text: #e7e7ef;
+	--ns-muted: #9a9ab0;
+	--ns-violet: #7c5cff;
+	--ns-violet-2: #9b82ff;
+	--ns-line: #26263200;
+	--ns-border: #262632;
+	--ns-head: "Space Grotesk", system-ui, sans-serif;
+	--ns-body: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+body {
+	background: var(--ns-bg);
+	color: var(--ns-text);
+	font-family: var(--ns-body);
+}
+
+h1, h2, h3, h4, h5, h6,
+.entry-title {
+	font-family: var(--ns-head);
+	font-weight: 700;
+	color: #fff;
+	letter-spacing: -0.02em;
+}
+
+a { color: var(--ns-violet-2); }
+
+.inside-article, .entry-content { color: var(--ns-text); }
+
+/* ---- Header: logo left, nav + CTA right ----------------------------- */
+.ns-bar {
+	background: rgba(14, 14, 18, 0.85);
+	backdrop-filter: blur(8px);
+	border-bottom: 1px solid var(--ns-border);
+	position: sticky;
+	top: 0;
+	z-index: 50;
+}
+
+.ns-bar__wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 16px 24px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.ns-bar__brand {
+	font-family: var(--ns-head);
+	font-size: 22px;
+	font-weight: 700;
+	color: #fff;
+	text-decoration: none;
+}
+
+.ns-bar__right {
+	display: flex;
+	align-items: center;
+	gap: 28px;
+}
+
+.ns-bar__nav .ns-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 24px;
+}
+
+.ns-bar__nav a {
+	color: var(--ns-muted);
+	text-decoration: none;
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.ns-bar__nav a:hover { color: #fff; }
+
+.ns-bar__cta {
+	background: var(--ns-violet);
+	color: #fff;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 14px;
+	padding: 10px 18px;
+	border-radius: 8px;
+	white-space: nowrap;
+}
+
+.ns-bar__cta:hover { background: var(--ns-violet-2); color: #fff; }
+
+/* ---- Footer: two columns, copyright left ---------------------------- */
+.ns-foot {
+	background: var(--ns-panel);
+	border-top: 1px solid var(--ns-border);
+	margin-top: 80px;
+}
+
+.ns-foot__grid {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 64px 24px 40px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 48px;
+}
+
+.ns-foot__logo {
+	font-family: var(--ns-head);
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+	display: block;
+	margin-bottom: 12px;
+}
+
+.ns-foot__brand p { color: var(--ns-muted); max-width: 420px; line-height: 1.7; }
+
+.ns-foot__label {
+	display: block;
+	text-transform: uppercase;
+	letter-spacing: 0.12em;
+	font-size: 12px;
+	color: var(--ns-violet-2);
+	margin-bottom: 14px;
+}
+
+.ns-foot__social ul { list-style: none; margin: 0; padding: 0; line-height: 2.1; }
+.ns-foot__social a { color: var(--ns-muted); text-decoration: none; }
+.ns-foot__social a:hover { color: #fff; }
+
+.ns-foot__bottom {
+	border-top: 1px solid var(--ns-border);
+}
+
+.ns-foot__copy {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 24px;
+	text-align: left;
+	color: var(--ns-muted);
+	font-size: 14px;
+}
+
+@media (max-width: 768px) {
+	.ns-foot__grid { grid-template-columns: 1fr; gap: 32px; }
+	.ns-bar__nav { display: none; }
+}
+
+/* ---- Content surface: cohesive dark panels (no white boxes) --------- */
+.separate-containers .inside-article,
+.separate-containers .comments-area,
+.separate-containers .page-header,
+.separate-containers .paging-navigation {
+	background: var(--ns-panel);
+	border: 1px solid var(--ns-border);
+	border-radius: 14px;
+	box-shadow: none;
+}
+
+.entry-content,
+.entry-summary,
+.entry-meta,
+.post-meta { color: var(--ns-muted); }
+
+.entry-title,
+.entry-title a { color: #fff; }
+.entry-meta a,
+.entry-content a { color: var(--ns-violet-2); }
+
+.widget {
+	background: var(--ns-panel);
+	border: 1px solid var(--ns-border);
+	border-radius: 14px;
+	color: var(--ns-text);
+}
+.widget .widget-title { color: #fff; }
+.widget a { color: var(--ns-muted); }
+.widget a:hover { color: #fff; }
+
+input[type="search"],
+input[type="text"],
+input[type="email"],
+.wp-block-search__input {
+	background: var(--ns-bg);
+	border: 1px solid var(--ns-border);
+	color: var(--ns-text);
+}
+
+button,
+.button,
+input[type="submit"],
+.wp-block-search__button {
+	background: var(--ns-violet);
+	color: #fff;
+	border: 0;
+}
+button:hover,
+.wp-block-search__button:hover { background: var(--ns-violet-2); }
