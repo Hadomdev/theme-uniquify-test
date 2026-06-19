@@ -11,8 +11,10 @@ Test task: take one free parent theme and build **two child themes** that are vi
 
 | Theme | Live URL |
 |---|---|
-| MediClinic Care (`theme-a`) | _TODO: add InstaWP link_ |
-| NovaSaaS Studio (`theme-b`) | _TODO: add InstaWP link_ |
+| MediClinic Care (`theme-a`) | https://twinkly-mouse-4ac6c3.instawp.site |
+| NovaSaaS Studio (`theme-b`) | https://polished-teira-dc6ab3.instawp.site |
+
+> Demos run on free InstaWP instances (GeneratePress + ACF + the child theme installed and active). Free sandboxes are temporary — ping me if a link has expired and I'll redeploy.
 
 ## The two themes
 
