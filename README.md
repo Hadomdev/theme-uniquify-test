@@ -7,14 +7,14 @@ Test task: take one free parent theme and build **two child themes** that are vi
 - **Plugin:** Advanced Custom Fields (free)
 - **Solution write-up:** see [`SOLUTION.md`](./SOLUTION.md)
 
-## Live demos (InstaWP)
+## Live demos
 
 | Theme | Live URL |
 |---|---|
-| MediClinic Care (`theme-a`) | https://twinkly-mouse-4ac6c3.instawp.site |
-| NovaSaaS Studio (`theme-b`) | https://polished-teira-dc6ab3.instawp.site |
+| MediClinic Care (`theme-a`) | https://genial-wryneck-e1f8f0.instawp.site |
+| NovaSaaS Studio (`theme-b`) | https://detailwindow.s2-tastewp.com |
 
-> Demos run on free InstaWP instances (GeneratePress + ACF + the child theme installed and active). Free sandboxes are temporary — ping me if a link has expired and I'll redeploy.
+> Each demo runs GeneratePress + ACF + the child theme, installed and active. They're hosted on free WordPress sandboxes (InstaWP / TasteWP), which are temporary — ping me if a link has expired and I'll redeploy.
 
 ## The two themes
 
